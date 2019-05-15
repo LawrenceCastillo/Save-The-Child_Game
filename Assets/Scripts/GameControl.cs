@@ -15,18 +15,25 @@ public class GameControl : MonoBehaviour{
     private void Start(){
         door_winner = Random.Range(0, 5);
         Debug.Log ("Winner Index is: " + door_winner);
-        // chances     = 3;
+        //chances = 3;
         // Debug.Log ("Chances remaining: " + chances);
         scoreManager = GameObject.FindWithTag("GameManager").GetComponent<ScoreManager>();
         chances = scoreManager.returnChances();
-        Debug.Log ("Chances remaining: " + chances);
-        numChancesText.text  =  "Reamining Chances : " + chances.ToString();
+        numChancesText.text  =  "Remaining Chances : " + chances.ToString();
+        Debug.Log ("Chances remaining: " + scoreManager.returnChances());
+
+        //chances = 3;
+        //Debug.Log ("Chances remaining: " + chances);
+        
 
 
     }
 
     private void Update()
     {
+        //chances = scoreManager.returnChances();
+        
+
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
          

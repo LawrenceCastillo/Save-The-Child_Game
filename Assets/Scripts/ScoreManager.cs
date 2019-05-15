@@ -13,24 +13,25 @@ public class ScoreManager : MonoBehaviour
     int numOfChances = 0;
 
    
-    // public static ScoreManager control; //refer to our script as control
-    // private void Awake()
-    // {
-    //     if(control == null) // if control doesnt exist
-    //     {
-    //         control = this;
-    //         DontDestroyOnLoad(gameObject); //dont desroy when the new scene is loaded
-    //     }else if(control != this)
-    //     {
-    //         Destroy(gameObject);
-    //     }
-    // }
+    public static ScoreManager control; //refer to our script as control
+    private void Awake()
+    {
+        if(control == null) // if control doesnt exist
+        {
+            control = this;
+            DontDestroyOnLoad(gameObject); //dont desroy when the new scene is loaded
+        }else if(control != this)
+        {
+            Destroy(gameObject);
+        }
+
+    }
 
     void Start()
     {
         currentHealth = startingHealth;
         healthSlider.value = currentHealth;
-        Debug.Log("Current Health is : " + currentHealth);
+        Debug.Log("Starting Health is : " + currentHealth);
     }
 
     public void IncrementScore()
