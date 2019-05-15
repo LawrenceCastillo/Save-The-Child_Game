@@ -5,28 +5,40 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/TitleScene.unity
+    path: Assets/Scenes/1. TitleScene.unity
     guid: 93e6aca24e468584eb238dd68e1db45b
+  - enabled: 1
+    path: Assets/Scenes/2. Story.unity
+    guid: 549ec600685115943b068a908e3c6dc5
+  - enabled: 1
+    path: Assets/Scenes/3. Contracted.unity
+    guid: 49c34a91032a097489636b57dc8c5f46
+  - enabled: 1
+    path: Assets/Scenes/4. DiseaseD.unity
+    guid: 39e41a130b097fc4dbc9e859930d0120
+  - enabled: 1
+    path: Assets/Scenes/4. DiseaseH.unity
+    guid: 79d5c311306697c4eb3e76e8da3bf2c8
+  - enabled: 1
+    path: Assets/Scenes/4. DiseaseP.unity
+    guid: 373359b542cc1df41b66e9f37910d07a
   - enabled: 1
     path: Assets/Scenes/Level 0.unity
     guid: 0bb38fb97969b99438572c9f817d98f7
   - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: 87e62f89ae7e5994197611390a393bf5
-  - enabled: 0
-    path: Assets/__DELETED_GUID_Trash/dd2d1bc618cae864a91394704c12eb09
-    guid: dd2d1bc618cae864a91394704c12eb09
   - enabled: 1
     path: Assets/Scenes/Level 2.unity
     guid: 4e2513e2e4cec5840ad00b37f18f4e71
   - enabled: 1
     path: Assets/Scenes/DoorMiniGame.unity
     guid: 543920005c120324e8b7907d230bbedb
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
