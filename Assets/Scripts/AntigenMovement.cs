@@ -12,6 +12,8 @@ public class AntigenMovement : MonoBehaviour
 
     Ray ray;
     RaycastHit hit;
+    private AudioSource approach_antigen;
+    float timer = 0;
 
     // private LineRenderer laserLine;
     // private float nextFire;
@@ -22,6 +24,7 @@ public class AntigenMovement : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player").transform;
         scoreManager = GameObject.FindWithTag("GameManager").GetComponent<ScoreManager>();
         playerHitCount = GameObject.FindWithTag("PlayerHit").GetComponent<PlayerHitCount>();
+        approach_antigen = GameObject.FindGameObjectWithTag("Approach").GetComponent<AudioSource>();
     }
 
     
@@ -59,6 +62,21 @@ public class AntigenMovement : MonoBehaviour
     // For Hololens Testing
     void Update()
     {
+        timer += Time.deltaTime;
+
+        if (timer > 0.75){
+            approach_antigen.Play();
+            timer = 0;
+        }
+        //  if (approach_antigen.isPlaying)
+        //     {
+        //         approach_antigen.Stop();
+        //         approach_antigen.Play();
+        //     }
+        //     else
+        //     {
+        //         approach_antigen.Play();
+        //     }
         transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
 
         var headPosition = Camera.main.transform.position;
@@ -72,6 +90,7 @@ public class AntigenMovement : MonoBehaviour
             if (Input.anyKey){
                 if(hit.collider.gameObject == gameObject){                
                     scoreManager.IncrementScore();
+                    approach_antigen.Stop();
                     Destroy(gameObject);
                     //gameObject.GetComponent<Renderer>().material.color = new Color (255,255,0);
                 } 

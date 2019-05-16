@@ -106,6 +106,49 @@ public class GameControl : MonoBehaviour{
         }
     }
 
+// FOR HOLOLENS
+    // private void Update()
+    // {
+    
+    //     var headPosition = Camera.main.transform.position;
+    //     var gazeDirection = Camera.main.transform.forward;
+    //     RaycastHit hit;
+
+    //     if(chances > 0 && Physics.Raycast (headPosition, gazeDirection, out hit)){
+    //         if(Input.anyKey){
+    //             if(hit.collider.tag=="Door") {
+    //             hit.collider.gameObject.GetComponent<Renderer>().material.color = new Color (255,0,255);
+    //                 if (doors[door_winner].gameObject == hit.transform.gameObject){
+    //                     Debug.Log ("Winner");
+    //                     WinScene();
+    //                     winLoseText.text = "Winner";
+    //                 }
+    //               else if (hit.transform.gameObject.name != "checked"){
+    //                 hit.transform.gameObject.name = "checked";
+    //                 Debug.Log ("Not a winner");
+    //                 winLoseText.text = "Not A Winner";
+    //                 chances--;
+    //                 Debug.Log ("Chances remaining: " + chances);
+    //                 numChancesText.text  =  "Remaining Chances : " + chances.ToString();
+    //                 }
+    //             }
+    //         } 
+            
+    //         else {
+    //              hit.collider.gameObject.GetComponent<Renderer>().material.color = new Color (255,0,255);
+    //            }
+    //     }
+    //     else if (chances == 0) {
+    //        LoseScene();
+    //     }
+        
+    //     else {
+    //         for(int i = 0; i < doors.Length; i++){
+    //          doors[i].GetComponent<Renderer>().material.color = new Color (255,255,255);
+    //         }
+    //     }
+    // }
+
     public void WinScene()
     {
         SceneManager.LoadScene("EndingWin");
