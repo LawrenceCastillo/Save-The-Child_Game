@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
-    public Text killText;
+    private Text killText;
     int killCount = 0;
-    public Slider healthSlider;
+    private Slider healthSlider;
     int currentHealth;
     int startingHealth = 5;
     int numOfChances = 0;
@@ -29,6 +29,8 @@ public class ScoreManager : MonoBehaviour
 
     void Start()
     {
+        killText = GameObject.FindWithTag("Kill Count").GetComponent<UnityEngine.UI.Text>();
+        healthSlider = GameObject.FindWithTag("HealthSlider").GetComponent<UnityEngine.UI.Slider>();
         currentHealth = startingHealth;
         healthSlider.value = currentHealth;
         Debug.Log("Starting Health is : " + currentHealth);
@@ -37,7 +39,7 @@ public class ScoreManager : MonoBehaviour
     public void IncrementScore()
     {
         killCount++;
-        killText.text = "Kill Count : " + killCount.ToString();
+        //killText.text = "Kill Count : " + killCount.ToString();
     }
 
     public void DecrementHealth()

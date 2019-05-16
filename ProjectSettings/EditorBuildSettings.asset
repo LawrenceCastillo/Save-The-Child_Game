@@ -33,8 +33,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 2.unity
     guid: 4e2513e2e4cec5840ad00b37f18f4e71
   - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: 646050f346944034bb5692c4e438654c
+  - enabled: 1
+    path: Assets/Scenes/Level 4.unity
+    guid: e2ef7104dfaac4c4e8e8a6f6d36e76a5
+  - enabled: 1
     path: Assets/Scenes/DoorMiniGame.unity
     guid: 543920005c120324e8b7907d230bbedb
+  - enabled: 1
+    path: Assets/Scenes/EndingWin.unity
+    guid: a7f06afe8b212384e845a9a3ffa3a191
+  - enabled: 1
+    path: Assets/Scenes/EndingLose.unity
+    guid: 2bfeab43921012446b784878fcc6e9c6
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

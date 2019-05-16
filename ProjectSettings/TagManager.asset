@@ -13,6 +13,7 @@ TagManager:
   - SpawnAntigen
   - Button
   - PlayerHit
+  - HealthSlider
   layers:
   - Default
   - TransparentFX
