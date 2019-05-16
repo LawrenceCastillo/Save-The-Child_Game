@@ -29,7 +29,7 @@ public class ScoreManager : MonoBehaviour
 
     void Start()
     {
-        killText = GameObject.FindWithTag("Kill Count").GetComponent<UnityEngine.UI.Text>();
+        //killText = GameObject.FindWithTag("Kill Count").GetComponent<UnityEngine.UI.Text>();
         healthSlider = GameObject.FindWithTag("HealthSlider").GetComponent<UnityEngine.UI.Slider>();
         currentHealth = startingHealth;
         healthSlider.value = currentHealth;

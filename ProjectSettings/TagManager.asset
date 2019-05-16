@@ -17,6 +17,7 @@ TagManager:
   - Approach
   - PlayerWin
   - PlayerLose
+  - DiseaseName
   layers:
   - Default
   - TransparentFX

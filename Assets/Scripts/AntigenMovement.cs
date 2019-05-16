@@ -109,30 +109,6 @@ public class AntigenMovement : MonoBehaviour
     }
          
 
-        //if (Input.GetMouseButtonDown(0)) 
-        // if (Input.anyKey)
-        // {
-        //     //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        //    if (Physics.Raycast(headPosition, gazeDirection, out hit))
-        //     {
-        //         if(hit.collider.gameObject == gameObject){                
-        //             scoreManager.IncrementScore();
-        //             Destroy(gameObject);
-        //         } 
-        //     }
-        // }
-        
-        // else if (Physics.Raycast(headPosition, gazeDirection, out hit))
-        //     {
-        //         if(hit.collider.gameObject==gameObject) {
-        //             gameObject.GetComponent<Renderer>().material.color = new Color (255,0,255);
-        //         }
-        //     else{
-        //         gameObject.GetComponent<Renderer>().material.color = new Color (255,255,255);
-        //     }
-        // }
-    
-
 
 
     // if antigen collides with player -> destroy antigen + decrease health of player
